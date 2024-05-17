@@ -1,0 +1,6 @@
+//Zaira Lucero Aldama Esteban
+gradient([1,2,4]).modulate(src(s0),1).rotate(({time})=>(time%360)/2)
+.modulate(osc(25,0.1,0.5).kaleid(50)
+.scale(({time})=>Math.sin(time*1)*0.5+1)
+.modulate(noise(0.6,0.5)),0.5).out(o0).shape().scale(0.5).blend(shape(4),[0,0.25,0.5,0.75,1]).s0.initImage("https://img.freepik.com/fotos-premium/puesta-sol-montanas-nubes-fondo_761066-84804.jpg?w=900")
+.osc(6).modulate(src(s0),1).out(o0)
